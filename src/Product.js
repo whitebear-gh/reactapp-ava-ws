@@ -8,7 +8,7 @@ class Product extends Component {
     state = {
         showDetails: false
     }
-    buttonClicked(){
+    buttonClicked = () => {
         this.setState((prev) => {
             console.log('prev',prev);
             return {showDetails:!prev.showDetails}}
